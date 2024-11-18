@@ -162,3 +162,85 @@ body{
     background-color: var(--primario);
     mix-blend-mode: screen;
 }
+
+/* seccion productos */
+
+#productos{
+    width: 1200px;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 160px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: dimgrey; */
+}
+
+
+.img{
+    width: 420px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid var(--detalles);
+    border-radius: 15px;
+}
+
+.img:hover{
+    /* https://smoothshadows.com/#djEsMywzLDAuMjcsMTksMjUsMTksIzAzMDcxMiwjZjNmNGY2LCNmZmZmZmYsMg%3D%3D */
+box-shadow: 2px 3px 2px rgba(3, 7, 18, 0.27),
+8px 11px 8px rgba(3, 7, 18, 0.27),
+19px 25px 19px rgba(3, 7, 18, 0.27);
+
+}
+
+.img img{
+    width: 380px;
+    height: auto;
+    object-fit: cover;
+}
+
+.title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.btn button{
+    width: 180px;
+    text-align: center;
+    padding: 5px 9px;
+    background-color: crimson;
+    border: 0;
+    margin: 10px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn button:hover{
+    background-color: rgb(104, 4, 24);
+
+}
+
+.btn button a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.description{
+    width: 100%;
+    padding: 20px;
+    font-weight: 300;
+}
